@@ -1,4 +1,9 @@
-/* Program Description: This program is designed to take in the amount of sales a salesperson made, take 9% of that amount, add $200 as that's their base salary, and save the total. The program takes the total amount and categorizes it into ranges of salary ranges. The program then prints out the ranges and the amount of salespeople that earned that salary. The program loops to take in as many inputs as the user may want, and whenever the user chooses to stop they can enter -1. The program also prints out an appluase message as it randomized to choose between four messages provided. 
+/* Program Description: This program is designed to take in the amount of sales a salesperson made, 
+take 9% of that amount, add $200 as that's their base salary, and save the total. The program takes the 
+total amount and categorizes it into ranges of salary ranges. The program then prints out the ranges and 
+the amount of salespeople that earned that salary. The program loops to take in as many inputs as the user 
+may want, and whenever the user chooses to stop they can enter -1. The program also prints out an appluase 
+message as it randomized to choose between four messages provided. 
  */
 
 import java.util.Random;
