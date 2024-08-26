@@ -6,14 +6,15 @@ public class SalaryCalculator {
     }
 
     // Symbolic constants
-    private static final double BASE_SALARY = 200.0;
-    private static final double COMMISSION_RATE = 0.09;
+    public static final double BASE_SALARY = 200.0;
+    public static final double COMMISSION_RATE = 0.09;
     private static final double[] SALARY_RANGES = new double[]{200, 300, 400, 500, 600, 700, 800, 900, 1000};
     
     private final int[] countRanges = new int[SALARY_RANGES.length];
 
     public double calculateTotalSalary(double salesAmount) {
-        return BASE_SALARY + (COMMISSION_RATE * salesAmount);
+        double commissionEarned = COMMISSION_RATE * salesAmount;
+        return BASE_SALARY + commissionEarned;
     }
 
     public void updateSalaryRanges(double totalSalary) {
@@ -28,7 +29,7 @@ public class SalaryCalculator {
 
     public String getSalaryTable() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Range\t\t\tNumber\n");
+        sb.append("Range\tNumber\n");
         for (int i = 0; i < SALARY_RANGES.length; i++) {
             String rangeString = i == SALARY_RANGES.length - 1
                     ? String.format("$%.0f and over", SALARY_RANGES[i])
